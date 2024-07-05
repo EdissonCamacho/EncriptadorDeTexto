@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encritador Palabras: Edisson Camacho</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="h-[100vh] bg-[#E5E5E59] flex flex-col lg:flex-row gap-3">
+        <div class="bg-[#ffffff]"> <span class="text-blue-950 text-8xl ml-4  "> a</span></div>
+          <div class="h-2/4 lg:h-full flex flex-col gap-3 ml-1   ">
+           <textarea id="texto" class="text-blue-300 text-3xl h-full m-1  p-3" placeholder="">Ingrese su texto aqui </textarea>
+           <span class="text-gray-400">Solo letras minúsculas y sin acentos</span>
+           <div class="flex flex-col sm:flex-row gap-1">
+            <button onclick="encriptar()" class="w-[343px] h-[67px] rounded-[24px] text-white bg-blue-950   text-[16px]">Encriptar</button>
+           <button onclick="desencriptar()" class="w-[343px] h-[67px] rounded-[24px]  text-blue-950 border border-solid border-blue-950 text-[16px]" >Desencriptar</button>
+      
+           </div>
+           
+      
+           
+      
+        </div>
+        <div class=" h-1/4 lg:h-4/5 mt-2 w-full bg-white border border-solid rounded-lg shadow-lg lg:rounded-3xl flex flex-col gap-3 items-center">
+            <div class=" text-center font-bold text-2xl  text-gray-500  p-4  " id="valor">
+                Ningún mensaje fue encontrado <br>
+                <span class="text-[16px] text-gray-800">
+                Ingresa el texto que desees encriptar o desencriptar.</span>
+              
+              
+                </div>
+                <button onclick="copiar()" class="w-[343px] h-[67px] rounded-[24px]  text-blue-950 border border-solid border-blue-950 text-[16px]" id="copiarbtn" >Copiar</button>
+
+        </div>
+
+        
+
+      </div>
+
+    
+</body>
+</html>
